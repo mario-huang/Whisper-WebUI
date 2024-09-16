@@ -19,13 +19,3 @@ services:
     tty: true
 
     entrypoint: ["python", "app.py", "--server_port", "7860", "--server_name", "0.0.0.0",]
-
-    # If you're not using nvidia GPU, Update device to match yours.
-    # See more info at : https://docs.docker.com/compose/compose-file/deploy/#driver
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [ gpu ]
