@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 VOLUME [ "/Whisper-WebUI/models" ]
 VOLUME [ "/Whisper-WebUI/outputs" ]
 
-ENTRYPOINT [ "python", "app.py" ]
+CMD [ "python", "app.py" ]
