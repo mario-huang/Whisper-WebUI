@@ -1,5 +1,5 @@
 whisper:
-  model_size: "large-v2"
+  model_size: "small"
   lang: "Automatic Detection"
   is_translate: false
   beam_size: 5
