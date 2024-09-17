@@ -1,21 +1,10 @@
-version: '3.8'
-
 services:
-  app:
-    build: .
-    image: jhj0517/whisper-webui:latest
-
+  whisper-webui:
+    image: mariohuang/whisper-webui
+    container_name: whisper-webui
+    restart: always
     volumes:
-      # Update paths to mount models and output paths to your custom paths like this, e.g:
-      # - C:/whisper-models/custom-path:/Whisper-WebUI/models
-      # - C:/whisper-webui-outputs/custom-path:/Whisper-WebUI/outputs
-      - /Whisper-WebUI/models
-      - /Whisper-WebUI/outputs
-
+      - ./models:/Whisper-WebUI/models
+      - ./outputs:/Whisper-WebUI/outputs
     ports:
       - "7860:7860"
-
-    stdin_open: true
-    tty: true
-
-    entrypoint: ["python", "app.py", "--server_port", "7860", "--server_name", "0.0.0.0",]
