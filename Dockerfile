@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 VOLUME [ "/Whisper-WebUI/models" ]
 VOLUME [ "/Whisper-WebUI/outputs" ]
 
-CMD [ "python", "app.py", "--colab" ]
+CMD [ "python", "app.py", "--colab", "True" ]
