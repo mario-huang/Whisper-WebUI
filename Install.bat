@@ -8,7 +8,7 @@ echo checked the venv folder. now installing requirements..
 
 call "%~dp0\venv\scripts\activate"
 
-python -m pip install -U pip
+@REM python -m pip install -U pip
 pip install -r requirements.txt
 
 if errorlevel 1 (
