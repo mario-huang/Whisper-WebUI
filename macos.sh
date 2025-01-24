@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf ./venv && mkdir ./venv
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ./venv/miniconda.sh
+curl https://repo.anaconda.com/miniconda/Miniconda3-py310_24.7.1-0-MacOSX-arm64.sh -o ./venv/miniconda.sh
 bash ./venv/miniconda.sh -b -u -p ./venv
 rm ./venv/miniconda.sh
 
