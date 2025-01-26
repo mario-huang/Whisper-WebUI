@@ -7,4 +7,5 @@ rm ./venv/miniconda.sh
 
 source ./venv/bin/activate
 
+sed -i '' 's|^\(--extra-index-url.*\)|# \1|' requirements.txt
 pip install -r requirements.txt
