@@ -1,7 +1,6 @@
 #!/bin/bash
 
-args=("$@")
-set --
 source venv/bin/activate
-python app.py "${args[@]}"
+python app.py "$@"
+
 echo "launching the app"
