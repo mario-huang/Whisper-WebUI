@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 mkdir ./venv
 curl https://repo.anaconda.com/miniconda/Miniconda3-py310_24.7.1-0-MacOSX-arm64.sh -o ./venv/miniconda.sh
